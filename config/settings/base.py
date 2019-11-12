@@ -77,6 +77,7 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     "explain_algorithms.users.apps.UsersConfig",
     # Your stuff: custom apps go here
+    "explain_algorithms.algo_explained.apps.AlgoExplainedConfig",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
