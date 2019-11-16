@@ -5,8 +5,7 @@
     background: #eee !important;
 }
 
-.btn-primary:hover,
-.btn-primary:focus {
+.btn-primary:hover,.btn-primary:focus {
     background-color: #108d6f;
     border-color: #108d6f;
     box-shadow: none;
@@ -35,8 +34,7 @@ section .section-title {
     background: #ffffff;
 }
 
-.image-flip:hover .backside,
-.image-flip.hover .backside {
+.image-flip:hover .backside, .image-flip.hover .backside {
     -webkit-transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);
     -o-transform: rotateY(0deg);
@@ -45,8 +43,7 @@ section .section-title {
     border-radius: .25rem;
 }
 
-.image-flip:hover .frontside,
-.image-flip.hover .frontside {
+.image-flip:hover .frontside,.image-flip.hover .frontside {
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
@@ -89,8 +86,7 @@ section .section-title {
     box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
 }
 
-.frontside,
-.backside {
+.frontside, .backside {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
@@ -107,8 +103,7 @@ section .section-title {
     transform-style: preserve-3d;
 }
 
-.frontside .card,
-.backside .card {
+.frontside .card, .backside .card {
     min-height: 312px;
 }
 
@@ -117,8 +112,7 @@ section .section-title {
     color: #007b5e !important;
 }
 
-.frontside .card .card-title,
-.backside .card .card-title {
+.frontside .card .card-title, .backside .card .card-title {
     color: #007b5e !important;
 }
 
