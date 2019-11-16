@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from .models import Post, Comment
-from .forms import CommentForm
+from explain_algorithms.algo_explained.models import Post, Comment
+from explain_algorithms.algo_explained.forms import CommentForm
 
 #blog_index will display a list of all your posts.
 
