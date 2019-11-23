@@ -115,5 +115,6 @@ See detailed `cookiecutter-django Heroku documentation`_.
 
 Unblocking Myself
 -----------------
-# Resources I used to unblock myself
+Resources I used to unblock myself
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 *Was getting a ReverseNotMatch error: So used this question to unblock myself https://stackoverflow.com/questions/45724006/django-reverse-for-not-found-is-not-a-valid-view-function-or-pattern-na
