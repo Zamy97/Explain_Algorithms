@@ -1,6 +1,20 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Hello</h1>
-<h2>Is this page for real working?????</h2>
+  <div class="col-md-8 offset-md-2">
+    <h1>Blog Index</h1>
+      {% for post in posts %}
+      <h2><a href="{% url 'algorithms:blog_detail' post.pk%}">{{ post.title }}</a></h2>
+      <small>
+      {{ post.created_on.date }} |&nbsp;
+      Categories:&nbsp;
+      {% for category in post.categories.all %}
+      <a href="{% url 'algorithms:blog_category' category.name %}">
+          {{ category.name }}
+      </a>&nbsp;
+      {% endfor %}
+  </small>
+  <p>{{ post.body | slice:":400" }}...</p>
+  {% endfor %}
+</div>
 {% endblock content %}
