@@ -1,4 +1,4 @@
-explain_algorithms 
+explain_algorithms
 ===================
 
 Goal is to create a site where I am going to make post about different algorithms that I solve as preparation of my interviews.
@@ -112,6 +112,5 @@ See detailed `cookiecutter-django Heroku documentation`_.
 
 .. _`cookiecutter-django Heroku documentation`: http://cookiecutter-django.readthedocs.io/en/latest/deployment-on-heroku.html
 
-
-
-
+# Resources I used to unblock myself
+*Was getting a ReverseNotMatch error: So used this question to unblock myself https://stackoverflow.com/questions/45724006/django-reverse-for-not-found-is-not-a-valid-view-function-or-pattern-na
