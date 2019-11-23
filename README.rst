@@ -118,14 +118,6 @@ Unblocking Myself
 Resources I used to unblock myself
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Moved to `Live reloading and SASS compilation`_.
-
-.. _`Live reloading and SASS compilation`: http://cookiecutter-django.readthedocs.io/en/latest/live-reloading-and-sass-compilation.html
-
-
-
-
-
 Was getting a ReverseNotMatch error so `used this question to unblock myself`_.
 
 .. _`used this question to unblock myself`: https://stackoverflow.com/questions/45724006/django-reverse-for-not-found-is-not-a-valid-view-function-or-pattern-na
