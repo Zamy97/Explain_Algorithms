@@ -118,8 +118,13 @@ Unblocking Myself
 Resources I used to unblock myself
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Moved to `Live reloading and SASS compilation` _.
+Moved to `Live reloading and SASS compilation`_.
+
 .. _`Live reloading and SASS compilation`: http://cookiecutter-django.readthedocs.io/en/latest/live-reloading-and-sass-compilation.html
+
+
+
+
 
 Was getting a ReverseNotMatch error so `used this question to unblock myself`_.
 
