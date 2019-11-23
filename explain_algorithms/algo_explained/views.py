@@ -2,6 +2,8 @@ from django.shortcuts import render
 from explain_algorithms.algo_explained.models import Post, Comment
 from explain_algorithms.algo_explained.forms import CommentForm
 
+#Do the class based view instead of function based view
+
 #blog_index will display a list of all your posts.
 
 def blog_index(request):
