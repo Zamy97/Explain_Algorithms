@@ -6,7 +6,7 @@ from django.urls import path
 # )
 from . import views
 
-app_name = "algo_explained"
+app_name = "Explain_Algo"
 urlpatterns = [
         path("all_posts/", views.blog_index, name="blog_index"),
         # path("<int:pk>/", views.blog_detail, name="blog_detail"),

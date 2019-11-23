@@ -5,7 +5,7 @@ from django.utils.translation import ugettext_lazy as _
 class AlgoExplainedConfig(AppConfig):
     name = "explain_algorithms.algo_explained"
 
-    verbose_name = _("algo_explained")
+    verbose_name = "Explain_Algo"
 
     def ready(self):
         try:
