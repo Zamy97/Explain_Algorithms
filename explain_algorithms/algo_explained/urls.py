@@ -4,6 +4,7 @@ from django.urls import path
 #     blog_detail,
 #     blog_category,
 # )
+
 from . import views
 
 app_name = "algorithms"
