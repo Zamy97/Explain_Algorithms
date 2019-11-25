@@ -12,8 +12,8 @@
         {% endfor %}
     </small>
     <p>{{ post.body | linebreaks }}</p>
-    <h3>Leave a comment:</h3>
-    <form action="/blog/{{ post.pk }}/" method="post">
+    <h4>Leave a comment:</h4>
+    <form action="/{{ post.pk }}/" method="post">
         {% csrf_token %}
         <div class="form-group">
             {{ form.author }}
@@ -33,4 +33,4 @@
     <hr>
     {% endfor %}
 </div>
-{% endblock %}
+{% endblock content %}
