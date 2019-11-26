@@ -125,4 +125,5 @@ Was getting a ReverseNotMatch error so `used this question to unblock myself`_.
 
 Goal is to design my views using the Built in generic views!
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-`Here's a sample` https://www.tutorialspoint.com/django/django_generic_views.htm
+`Here's a sample` _.
+.._:https://www.tutorialspoint.com/django/django_generic_views.htm
