@@ -121,3 +121,8 @@ Resources I used to unblock myself
 Was getting a ReverseNotMatch error so `used this question to unblock myself`_.
 
 .. _`used this question to unblock myself`: https://stackoverflow.com/questions/45724006/django-reverse-for-not-found-is-not-a-valid-view-function-or-pattern-na
+
+
+Goal is to design my views using the Built in generic views!
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+`Here's a sample` https://www.tutorialspoint.com/django/django_generic_views.htm
