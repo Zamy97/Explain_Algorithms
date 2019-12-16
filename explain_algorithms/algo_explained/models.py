@@ -10,7 +10,7 @@ class Post(models.Model):
     body            = models.TextField()
     created_on      = models.DateTimeField(auto_now_add = True)
     last_modified   = models.DateTimeField(auto_now = True)
-    catagories      = models.ManyToManyField('Category', related_name = "posts")
+    categories      = models.ManyToManyField('Category', related_name = "posts")
 
 class Comment(models.Model):
     author          = models.CharField(max_length = 60)
