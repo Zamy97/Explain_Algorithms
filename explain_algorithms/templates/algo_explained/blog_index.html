@@ -1,6 +1,6 @@
 {% extends "base.html" %}
-
 {% block content %}
+
   <div class="col-md-8 offset-md-2">
     <h1>Blog Index</h1>
       {% for post in posts %}
@@ -10,7 +10,7 @@
       Categories:&nbsp;
       {% for category in post.categories.all %}
       <a href="{% url 'algorithms:blog_category' category.name %}">
-          {{ category.name }}
+        {{ category.name }}
       </a>&nbsp;
       {% endfor %}
   </small>

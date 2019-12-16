@@ -6,13 +6,18 @@ from explain_algorithms.algo_explained.forms import CommentForm
 
 #blog_index will display a list of all your posts.
 def blog_index(request):
-    posts = Post.objects.all().order_by("-created_on")
-    context = {"posts" : posts}
+    posts = Post.objects.all().order_by('-created_on')
+    context = {
+        "posts" : posts
+    }
     return render(request, "algo_explained/blog_index.html", context)
 
 def blog_category(request, category):
-    posts = Post.objects.filter(categories__name__contains=category).order_by("-created_on")
-    context = {"category": category, "posts": posts}
+    posts = Post.objects.filter(categories__name__contains=category).order_by('-created_on')
+    context = {
+        "category": category,
+        "posts": posts
+        }
     return render(request, "algo_explained/blog_category.html", context)
 
 
@@ -25,9 +30,9 @@ def blog_detail(request, pk):
         form = CommentForm(request.POST)
         if form.is_valid():
             comment = Comment(
-                author=form.cleaned_data["author"],
-                body=form.cleaned_data["body"],
-                post=post,
+                author = form.cleaned_data["author"],
+                body   = form.cleaned_data["body"],
+                post   = post,
             )
             comment.save()
 
