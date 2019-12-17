@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from projects.models import Project
+from explain_algorithms.projects.models import Project
 
 def project_index(request):
     projects = Project.objects.all()
@@ -13,4 +13,4 @@ def project_detail(request, pk):
     context = {
         "project": project
     }
-    return render(request, "project_detail.html", context)
+    return render(request, "projects/project_detail.html", context)
