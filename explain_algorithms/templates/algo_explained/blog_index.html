@@ -10,12 +10,12 @@
           <div class = "card-body">
             <!-- <h2 class = "card-title"><a href="{% url 'algorithms:blog_detail' post.pk%}">{{ post.title }}</a></h2> -->
             <h2 class = "card-title">{{ post.title | slice:":50" }}</h2>
-              <p class = "card-title">|| Posted on: {{ post.created_on.date }} ||&nbsp;</p>
+            || Posted on: {{ post.created_on.date }} ||&nbsp; Tags:
               <!-- <p class = "card-title"> Categories:&nbsp; </p> -->
               {% for category in post.categories.all %}
               <a href="{% url 'algorithms:blog_category' category.name %}">
                 {{ category.name }}
-              </a>&nbsp;
+              </a>&nbsp; ||
               {% endfor %}
               <p class = "card-text">{{ post.body | slice:":200" }}...</p>
               <a href="{% url 'algorithms:blog_detail' post.pk %}"
