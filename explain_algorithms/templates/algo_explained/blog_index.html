@@ -6,15 +6,15 @@
       {% for post in posts %}
       <h2><a href="{% url 'algorithms:blog_detail' post.pk%}">{{ post.title }}</a></h2>
       <small>
-      {{ post.created_on.date }} |&nbsp;
-      Categories:&nbsp;
+      <!-- {{ post.created_on.date }} |&nbsp; -->
+        <!-- Categories:&nbsp; -->
       {% for category in post.categories.all %}
       <a href="{% url 'algorithms:blog_category' category.name %}">
         {{ category.name }}
       </a>&nbsp;
       {% endfor %}
   </small>
-  <p>{{ post.body | slice:":400" }}...</p>
+  <p>{{ post.body | slice:":200" }}...</p>
   {% endfor %}
 </div>
 {% endblock content %}
