@@ -3,8 +3,8 @@
 <div class="col-md-8 offset-md-2">
     <h1>{{ post.title }}</h1>
     <small>
-        {{ post.created_on.date }} |&nbsp;
-        Categories:&nbsp;
+        Posted on: {{ post.created_on.date }} |&nbsp;
+        Tags:&nbsp;
         {% for category in post.categories.all %}
         <a href="{% url 'algorithms:blog_category' category.name %}">
             {{ category.name }}
