@@ -2,24 +2,21 @@
 {% block content %}
 
 <!-- <div class="col-md-8 offset-md-2"> -->
-<h1>Blog Index</h1>
+<center><h1>Blog Index</h1></center>
 <div class = "row">
   {% for post in posts %}
       <div class = "col-md-6">
         <div class = "card mb-3">
           <div class = "card-body">
             <!-- <h2 class = "card-title"><a href="{% url 'algorithms:blog_detail' post.pk%}">{{ post.title }}</a></h2> -->
-            <h2 class = "card-title">{{ post.title }}</h2>
-
-              <!-- <small> -->
-              <p class = "card-title"> Posted on: {{ post.created_on.date }} |&nbsp; Categories:&nbsp;</p>
-                <!-- <p class = "card-title"> Categories:&nbsp; </p> -->
-      {% for category in post.categories.all %}
-      <!-- <a href="{% url 'algorithms:blog_category' category.name %}"> -->
-        <!-- {{ category.name }} -->
-      <!-- </a>&nbsp; -->
-      <!-- {% endfor %} -->
-  <!-- </small> -->
+            <h2 class = "card-title">{{ post.title | slice:":50" }}</h2>
+              <p class = "card-title">|| Posted on: {{ post.created_on.date }} ||&nbsp;</p>
+              <!-- <p class = "card-title"> Categories:&nbsp; </p> -->
+              {% for category in post.categories.all %}
+              <a href="{% url 'algorithms:blog_category' category.name %}">
+                {{ category.name }}
+              </a>&nbsp;
+              {% endfor %}
               <p class = "card-text">{{ post.body | slice:":200" }}...</p>
               <a href="{% url 'algorithms:blog_detail' post.pk %}"
                  class="btn btn-primary">
