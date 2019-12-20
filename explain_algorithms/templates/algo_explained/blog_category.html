@@ -5,7 +5,7 @@
     <h1>{{ category | title }}</h1>
     <hr>
     {% for post in posts %}
-        <h2><a href="{% url 'algorithms:blog_detail' post.pk%}">{{ post.title }}</a></h2>
+        <h2><a href="{% url 'algorithms:blog_detail' post.pk%}">{{ post.title | slice:":70" }}</a></h2>
         <small>
             {{ post.created_on.date }} |&nbsp;
             Categories:&nbsp;
@@ -15,7 +15,7 @@
             </a>&nbsp;
             {% endfor %}
         </small>
-        <p>{{ post.body | slice:":400" }}...</p>
+        <p>{{ post.body | slice:":100" }}...</p>
     {% endfor %}
 </div>
 {% endblock %}
