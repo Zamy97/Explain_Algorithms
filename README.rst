@@ -126,3 +126,6 @@ Was getting a ReverseNotMatch error so `used this question to unblock myself`_.
 Goal is to design my views using the Built in generic views! `Here is a sample`_.
 
 .. _`Here is a sample`: https://www.tutorialspoint.com/django/django_generic_views.htm
+
+
+Come back to this: https://stackoverflow.com/questions/26829435/collectstatic-command-fails-when-whitenoise-is-enabled/32347324#32347324
