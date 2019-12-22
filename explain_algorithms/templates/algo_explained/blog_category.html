@@ -1,21 +1,32 @@
 {% extends "base.html" %}
 {% block content %}
-
-<div class="col-md-8 offset-md-2">
-    <h1>{{ category | title }}</h1>
+<!-- <div class="col-md-8 offset-md-2"> -->
+    <h1> Showing Post related to:  {{ category | title }}</h1>
     <hr>
+    <div class = "row">
     {% for post in posts %}
-        <h2><a href="{% url 'algorithms:blog_detail' post.pk%}">{{ post.title | slice:":70" }}</a></h2>
+        <div class = "col-md-6">
+          <div class = "card mb-3">
+            <div class = "card-body">
+              <h3 class = "card-title">{{ post.title | slice:":70" }}</h3>
         <small>
             {{ post.created_on.date }} |&nbsp;
-            Categories:&nbsp;
+            Tags:&nbsp;
             {% for category in post.categories.all %}
             <a href="{% url 'algorithms:blog_category' category.name %}">
                 {{ category.name }}
             </a>&nbsp;
             {% endfor %}
         </small>
-        <p>{{ post.body | slice:":100" }}...</p>
+        <p class = "card-text">{{ post.body | slice:":100" }}...</p>
+          <a href = "{% url 'algorithms:blog_detail' post.pk %}"
+            class = "btn btn-outline-success">
+              Read More
+          </a>
+        </div>
+      </div>
+    </div>
+
     {% endfor %}
 </div>
 {% endblock %}
