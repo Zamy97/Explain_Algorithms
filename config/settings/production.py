@@ -78,13 +78,10 @@ AWS_DEFAULT_ACL = None
 AWS_S3_REGION_NAME = env("DJANGO_AWS_S3_REGION_NAME", default=None)
 # STATIC
 # ------------------------
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+# STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 
-from django.test import TestCase, override_settings
-class MyTest(TestCase):
-    @override_settings(STATICFILES_STORAGE='django.contrib.staticfiles.storage.StaticFilesStorage')
-    def test_something(self):
-        pass
+
 # MEDIA
 # ------------------------------------------------------------------------------
 # region http://stackoverflow.com/questions/10390244/
