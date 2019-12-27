@@ -148,7 +148,6 @@ ANYMAIL = {
 # http://whitenoise.evans.io/en/latest/django.html#enable-whitenoise
 MIDDLEWARE.insert(1, "whitenoise.middleware.WhiteNoiseMiddleware")  # noqa F405
 
-INSTALLED_APPS += ["whitenoise"]  # noqa F405
 
 
 # LOGGING
